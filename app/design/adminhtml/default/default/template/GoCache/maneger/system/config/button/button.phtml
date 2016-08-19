@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    //<![CDATA[
+
+    function check() {
+    	var configForm = new varienForm('config_edit_form');	
+    	
+    	  if (configForm.validator.validate()) {
+	        new Ajax.Request('<?php echo $this->getAjaxUrl() ?>', {
+	            method:     'post',
+	            onSuccess: function(transport){
+	            	
+		            location.reload();
+	            }
+	        });
+	     }
+    }
+    //]]>
+</script>
+<?php echo $this->getButtonHtml() ?>
