@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <GoCache_Manager>
+            <active>true</active>
+            <codePool>local</codePool>
+        </GoCache_Manager>
+    </modules>
+</config>
